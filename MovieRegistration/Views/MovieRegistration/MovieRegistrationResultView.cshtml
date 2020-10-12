@@ -1,0 +1,38 @@
+﻿@model MovieRegistration.Models.MovieRegistrationResultViewModel
+
+@{
+    ViewData["Title"] = "MovieRegistrationResultView";
+}
+
+<h1>Movie Registration Result</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <ul>
+            <li>
+                <span>Title - @Model.Title</span>
+            </li>
+            <li>
+                <span>Genere - @Model.Genere</span>
+            </li>
+            <li>
+                <span>Year - @Model.Year</span>
+            </li>
+            <li>
+                <span>Actors - @Model.Actors</span>
+            </li>
+            <li>
+                <span>Directors - @Model.Directors</span>
+            </li>
+            <br />
+            <p>
+                 @Model.Result
+            </p>
+        </ul>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
