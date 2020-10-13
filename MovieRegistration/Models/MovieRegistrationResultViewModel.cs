@@ -7,9 +7,10 @@ namespace MovieRegistration.Models
 {
     public class MovieRegistrationResultViewModel
     {
+        public int ID { get; set; }
         public string Title { get; set; }
         public string Genere { get; set; }
-        public string Year { get; set; }
+        public int Year { get; set; }
         public string Actors { get; set; }
         public string Directors { get; set; }
         public string Result { get; set; }

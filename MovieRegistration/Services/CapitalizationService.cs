@@ -15,10 +15,10 @@ namespace MovieRegistration.Services
             {
                 Title = viewModel.Title.ToUpper(),
                 Genere = viewModel.Genere.ToUpper(),
-                Year = viewModel.Year.ToUpper(),
+                Year = viewModel.Year,
                 Actors = viewModel.Actors.ToUpper(),
                 Directors = viewModel.Directors.ToUpper(),
-                Result = viewModel.Title + " has been registered."
+                Result = viewModel.Title.ToUpper() + " has been registered."
             }; 
         }
     }
